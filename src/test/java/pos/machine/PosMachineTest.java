@@ -19,5 +19,12 @@ public class PosMachineTest {
                 "**********************";
 
         assertEquals(expected, posMachine.printReceipt(ItemDataLoader.loadBarcodes()));
+        System.out.println(posMachine.printReceipt(ItemDataLoader.loadBarcodes()));
+    }
+
+    @Test
+    public void testString(){
+        PosMachine posMachine = new PosMachine();
+        posMachine.printReceipt(ItemDataLoader.loadBarcodes());
     }
 }
